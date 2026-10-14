@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de influencer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+    <header class="mb-8 flex flex-col gap-1 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
+      <h1 class="text-2xl font-semibold text-slate-900 sm:text-3xl">Dashboard de influencer</h1>
+      <p class="text-sm text-slate-500">Datos de ejemplo</p>
+    </header>
+
+    <section aria-label="Resumen general" class="mb-8 sm:mb-10">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-lg border border-slate-200 bg-white p-5">
+          <h2 class="text-sm font-medium text-slate-600">Comisiones totales</h2>
+          <p class="mt-3 text-2xl font-semibold text-slate-900">1.020 €</p>
+        </article>
+        <article class="rounded-lg border border-slate-200 bg-white p-5">
+          <h2 class="text-sm font-medium text-slate-600">Ventas</h2>
+          <p class="mt-3 text-2xl font-semibold text-slate-900">90</p>
+        </article>
+        <article class="rounded-lg border border-slate-200 bg-white p-5">
+          <h2 class="text-sm font-medium text-slate-600">Tasa de conversión</h2>
+          <p class="mt-3 text-2xl font-semibold text-slate-900">0,30 %</p>
+          <p class="mt-1 text-xs text-slate-500">Ventas / alcance × 100</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-label="Rendimiento" class="mb-8 sm:mb-10">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-lg border border-slate-200 bg-white p-5">
+          <h2 class="text-base font-semibold text-slate-900">Rendimiento por plataforma</h2>
+          <dl class="mt-4 divide-y divide-slate-100 text-sm">
+            <div class="flex items-center justify-between py-3">
+              <dt class="text-slate-600">Instagram</dt>
+              <dd class="font-medium text-slate-900">45 ventas</dd>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <dt class="text-slate-600">TikTok</dt>
+              <dd class="font-medium text-slate-900">30 ventas</dd>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <dt class="text-slate-600">YouTube</dt>
+              <dd class="font-medium text-slate-900">15 ventas</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="rounded-lg border border-slate-200 bg-white p-5">
+          <h2 class="text-base font-semibold text-slate-900">Rendimiento por producto</h2>
+          <dl class="mt-4 divide-y divide-slate-100 text-sm">
+            <div class="flex items-center justify-between py-3">
+              <dt class="text-slate-600">Producto A</dt>
+              <dd class="font-medium text-slate-900">40 ventas</dd>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <dt class="text-slate-600">Producto B</dt>
+              <dd class="font-medium text-slate-900">20 ventas</dd>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <dt class="text-slate-600">Producto C</dt>
+              <dd class="font-medium text-slate-900">30 ventas</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="rounded-lg border border-slate-200 bg-white p-5 md:col-span-2 lg:col-span-1">
+          <h2 class="text-base font-semibold text-slate-900">Alcance → clics → ventas</h2>
+          <dl class="mt-4 divide-y divide-slate-100 text-sm">
+            <div class="flex items-center justify-between py-3">
+              <dt class="text-slate-600">Alcance</dt>
+              <dd class="font-medium text-slate-900">30.000</dd>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <dt class="text-slate-600">Clics</dt>
+              <dd class="font-medium text-slate-900">1.500</dd>
+            </div>
+            <div class="flex items-center justify-between py-3">
+              <dt class="text-slate-600">Ventas</dt>
+              <dd class="font-medium text-slate-900">90</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="productos-heading">
+      <div class="mb-4 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+        <h2 id="productos-heading" class="text-lg font-semibold text-slate-900">Productos</h2>
+        <p class="text-sm text-slate-500">Comisión del 15 % por venta</p>
+      </div>
+      <div class="overflow-x-auto rounded-lg border border-slate-200 bg-white">
+        <table class="w-full min-w-[36rem] text-left text-sm">
+          <thead class="bg-slate-50 text-xs font-medium uppercase text-slate-500">
+            <tr>
+              <th scope="col" class="px-5 py-3">Producto</th>
+              <th scope="col" class="px-5 py-3">Precio</th>
+              <th scope="col" class="px-5 py-3">Ventas</th>
+              <th scope="col" class="px-5 py-3">Comisiones generadas</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            <tr>
+              <th scope="row" class="px-5 py-4 font-medium text-slate-900">Producto A</th>
+              <td class="px-5 py-4">50 €</td>
+              <td class="px-5 py-4">40</td>
+              <td class="px-5 py-4">300 €</td>
+            </tr>
+            <tr>
+              <th scope="row" class="px-5 py-4 font-medium text-slate-900">Producto B</th>
+              <td class="px-5 py-4">120 €</td>
+              <td class="px-5 py-4">20</td>
+              <td class="px-5 py-4">360 €</td>
+            </tr>
+            <tr>
+              <th scope="row" class="px-5 py-4 font-medium text-slate-900">Producto C</th>
+              <td class="px-5 py-4">80 €</td>
+              <td class="px-5 py-4">30</td>
+              <td class="px-5 py-4">360 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

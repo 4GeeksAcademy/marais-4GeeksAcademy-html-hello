@@ -1,40 +1,24 @@
-# HTML Hello
+# Dashboard de influencer
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+Este proyecto es un dashboard de resultados para una influencer, creado con HTML y Tailwind CSS v4.
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+Incluye tres bloques: indicadores principales, rendimiento y una tabla de productos. Los datos son ficticios y respetan los precios de los productos y la comisión del 15 % de la consigna.
 
-## What to do next?
+El diseño se adapta a móvil, tablet y escritorio.
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+## Cómo abrirlo
+
+Inicia el servidor con este comando:
 
 ```bash
 $ pip3 install flask && python3 server.py
 ```
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+## Verificación manual
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+Se revisó el dashboard manualmente en el navegador, en formatos de móvil, tablet y escritorio. Se comprobó que el contenido se adapta, que los textos y la tabla se pueden leer y que aparecen los datos de ejemplo actualizados.
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
-
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
-
-### Contributors
+### Créditos de la plantilla
 
 This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
 
